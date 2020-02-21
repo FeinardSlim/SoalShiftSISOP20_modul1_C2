@@ -22,6 +22,5 @@ do
   let iteration++
   grep -r "Location" temp.log >> wget.log
   let iter++
-  echo "$name" >> name.log
 done
 rm temp.log

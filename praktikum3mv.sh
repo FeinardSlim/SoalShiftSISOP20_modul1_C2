@@ -1,4 +1,5 @@
 #!/bash/bin
+echo "cat ls > name.log"
 readarray line < wget.log
 readarray filename < name.log
 for ((i=0;i<28;i++))
@@ -59,3 +60,4 @@ for ((i=0;i<28;i++))
       mv "$name" /home/feinard/Praktikum/.kenangan
     fi
   done
+  rm name.log
